@@ -11,3 +11,10 @@ public class FabricaIngles implements Fabrica {
         return new ContadorDescendenteIngles();
     }
 }
+
+
+Fabrica fabrica = new FabricaIngles();
+Contador contador = fabrica.getContadorAscendente();
+System.out.println(contador.cuenta());
+contador = fabrica.getContadorDescendente();
+System.out.println(contador.cuenta());
