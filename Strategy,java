@@ -1,4 +1,6 @@
-public interface Contador {
+public class{
+
+    public interface Contador {
     String cuenta();
 }
 public class ContadorAscendente implements Contador {
@@ -12,4 +14,5 @@ public class ContadorDescendente implements Contador {
         return "Diez, nueve, ocho, siete, seis,
             cinco, cuatro, tres, dos y uno.";
     }
+}
 }
