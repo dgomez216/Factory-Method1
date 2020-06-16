@@ -1,8 +1,15 @@
-Astronauta astronauta = new Astronauta("Gagarin",
-    new ContadorAscendente());
-System.out.println("Soy " + astronauta.getNombre() +
-    ": " + astronauta.cuenta());
-
-astronauta.setContador(new ContadorDescendente());
-System.out.println("Soy " + astronauta.getNombre() +
-    ": " + astronauta.cuenta());
+public interface Contador {
+    String cuenta();
+}
+public class ContadorAscendente implements Contador {
+    @Override public String cuenta() {
+        return "Uno, dos, tres, cuatro, cinco,
+            seis, siete, ocho, nueve y diez";
+    }
+}
+public class ContadorDescendente implements Contador {
+    @Override public String cuenta() {
+        return "Diez, nueve, ocho, siete, seis,
+            cinco, cuatro, tres, dos y uno.";
+    }
+}
