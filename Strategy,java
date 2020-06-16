@@ -1,6 +1,4 @@
-public class Estretegia{
-
-    public interface Contador {
+public interface Contador {
     String cuenta();
 }
 public class ContadorAscendente implements Contador {
@@ -15,4 +13,4 @@ public class ContadorDescendente implements Contador {
             cinco, cuatro, tres, dos y uno.";
     }
 }
-}
+
